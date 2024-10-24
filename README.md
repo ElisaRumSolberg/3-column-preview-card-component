@@ -26,7 +26,7 @@ Users should be able to:
 - See hover states for interactive elements
 
 ### Screenshot
-![](./image/Skjermbilde 2024-10-24 093100.png)
+![Screenshot](https://github.com/ElisaRumSolberg/3-column-preview-card-component/blob/main/image/screenshot.png)
 
 
 
