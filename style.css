@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+main{
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.Cars{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.icon{
+    margin-bottom: 20px
+}
+article {
+    flex: 1 1 300px;
+    padding: 30px;
+    color:hsl(0, 0%, 95%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    
+ 
+
+}
+p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: hsla(0, 0%, 100%, 0.75); /* Paragraf rengi - saydam beyaz */
+    letter-spacing: 0.5px;
+    margin-top: 30px;
+}
+
+button {
+
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 80px;  
+    margin-left: 10px;
+    margin-block-end: 30px;
+}
+
+
+.sedan button {
+    background-color: white;
+    color: hsl(31, 77%, 52%); /* Sedan kutusunun rengiyle uyumlu */
+}
+
+.suv button {
+    background-color: white;
+    color: hsl(184, 100%, 22%); /* SUV kutusunun rengiyle uyumlu */
+}
+
+.luxury button {
+    background-color: white;
+    color: hsl(179, 100%, 13%); /* Luxury kutusunun rengiyle uyumlu */
+}
+
+/* Hover durumları için farklı renkler */
+.sedan button:hover {
+    background-color: hsl(31, 77%, 52%); /* Hover sırasında arka plan sedan rengine dönüşür */
+    color: white; /* Metin beyaz olur */
+}
+
+.suv button:hover {
+    background-color: hsl(184, 100%, 22%); /* Hover sırasında arka plan SUV rengine dönüşür */
+    color: white; /* Metin beyaz olur */
+}
+
+.luxury button:hover {
+    background-color: hsl(179, 100%, 13%); /* Hover sırasında arka plan luxury rengine dönüşür */
+    color: white; /* Metin beyaz olur */
+}
+.sedan {
+    background-color: hsl(31, 77%, 52%); /* Parlak turuncu */
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%); /* Koyu camgöbeği */
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%); /* Çok koyu camgöbeği */
+}
+
+@media (max-width: 768px) {
+    .Cars {
+        flex-direction: column;
+    }
+
+    article {
+        margin-bottom: 20px;
+        text-align: center;
+        align-items: center;
+    }
+}
